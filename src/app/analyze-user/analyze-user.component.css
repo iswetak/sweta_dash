@@ -1,0 +1,128 @@
+.example-container {
+    width: 960px;
+    height: 637px;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* border: 1px solid #555; */
+    border-radius: 5px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(92, 91, 91, 0.938),  
+       0 1px 1px 0 rgba(158, 157, 157, 0.856);
+}
+
+.mat-flat-button.btn1{
+    top: -31px; 
+    /* height: 45px;  */
+    margin-left: 860px; 
+    font-family: poppins;
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 15px;
+}
+
+.mat-flat-button.btn{
+    width: 130px;
+    top: -67px; 
+    /* height: 45px;  */
+    margin-left: 810px;
+    font-family: poppins; 
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 15px;
+}
+
+.mat-flat-button.cancel{
+    top: -18px;
+    margin-left: 170px; 
+    font-family: poppins;
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 15px;
+}
+
+.mat-flat-button.ok{
+    top: -54px;
+    margin-left: 260px; 
+    font-family: poppins;
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 15px;
+}
+
+
+.mat-flat-button.btn2{
+    width: 125px;
+    top: -84px; 
+    margin-left: 175px; 
+    font-family: poppins;
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 14px;
+}
+
+.mat-flat-button.btn3{
+    width: 140px;
+    top: -70px; 
+    margin-left: 350px; 
+    font-family: poppins;
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 14px;
+}
+
+.mat-flat-button.column{
+    width: 0px;
+    top: -75px; 
+    margin-left: 955px; 
+    font-family: poppins;
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 14px;
+}
+
+
+.mat-flat-button:hover {
+background-color: #3333ff;
+}
+
+.dropdown-item{
+    color: black;
+    font-family: poppins;
+}
+
+.heading {
+    color: #45496e;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.form-control:hover {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  }
+  .form-group:hover {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+ 
+  }
+
+mat-table {
+    margin-top: -20px;
+    margin-left: 25px;
+    width: 95%;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,0),  
+       0 1px 1px 0 rgba(0,0,0,0);
+       font-family: poppins, sans-serif;  
+  }
+
+  .date1{
+    margin-left: 165px;
+    top: -28px; 
+    background-color: #4D65DB; 
+    color: white;
+  }
+  .date2{
+    margin-left: 300px;
+    top: -64px; 
+    background-color: #4D65DB; 
+    color: white;
+  }

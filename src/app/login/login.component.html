@@ -1,0 +1,114 @@
+<mat-card>
+<div class="kt-grid kt-grid--ver kt-grid--root">
+   
+    <div class="kt-grid__item   kt-grid__item--fluid kt-grid  kt-grid kt-grid--hor kt-login-v2" id="kt_login_v2">
+
+        <!--begin::Item-->
+        <div class="kt-grid__item  kt-grid--hor">
+
+            <!--begin::Heade-->
+            <div class="kt-login-v2__head">
+                
+                <div class="kt-login-v2__signup" style="margin-left: 960px;">
+                    <span style="font-size: 16px; font-family: poppins; margin-left: -10px;">Don't have an account?</span>
+                    <a href="#" class="kt-link kt-font-brand" style="font-size: 16px; font-family: poppins;">Sign Up</a>
+                </div>
+            </div>
+
+            <!--begin::Head-->
+        </div>
+
+        <!--end::Item-->
+
+        <!--begin::Item-->
+        <div class="kt-grid__item  kt-grid  kt-grid--ver  kt-grid__item--fluid">
+
+            <!--begin::Body-->
+            <div class="kt-login-v2__body">
+
+                <!--begin::Wrapper-->
+                <div class="kt-login-v2__wrapper" style="margin-top: -5px;">
+                    <div class="kt-login-v2__container">
+                        <div class="kt-login-v2__title">
+                            <h3 style="font-family: poppins;">Sign to Account</h3>
+                        </div>
+
+                        <!--begin::Form-->
+                    <mat-card-content>
+                        <form [formGroup]="loginForm" class="kt-login-v2__form kt-form" action="" autocomplete="off" id="kt_login_form" (ngSubmit)="submitForm()">
+                            <mat-form-field style="width: 400px;">
+                            <div class="form-group" style="margin-top: -15px; margin-bottom: -5px;">
+                                <input class="form-control" (keypress)="omit_special_char($event)" formControlName="Username"  matInput minlength="3" type="text" placeholder="Username" name="username" autocomplete="off">
+                            </div>
+                            <mat-error *ngIf="loginForm.controls['Username'].errors?.required">This field is mandatory.</mat-error>
+                            <mat-error *ngIf="loginForm.controls['Username'].errors?.minlength">Minimum 3 charactors needed.</mat-error>
+
+                        </mat-form-field>
+                        
+                        <mat-form-field style="width: 400px;">
+                            <div class="form-group" style="margin-top: -15px; margin-bottom: -5px;">
+                                <input type="password" formControlName="Password" matInput minlength="6" maxlength="12" class="form-control" placeholder="Password" name="password" autocomplete="off">
+                            </div>
+                            <mat-error *ngIf="loginForm.controls['Password'].errors?.required">This field is mandatory.</mat-error>
+                            <mat-error *ngIf="loginForm.controls['Password'].errors?.minlength">Minimum 6 charactors needed.</mat-error>
+                            <mat-error *ngIf="loginForm.controls['Password'].errors?.maxlength">Maximum 12 charactors needed.</mat-error>
+                        </mat-form-field>
+                        <mat-error *ngIf="apiError">{{apiError}}</mat-error>
+                            <!--begin::Action-->
+                            <div class="kt-login-v2__actions" style="margin-top: 40px"> 
+                                <a href="#" class="kt-link kt-link--brand">
+                                    Forgot Password ?
+                                </a>
+                                <button type="submit" class="btn btn-brand btn-elevate btn-pill" id="kt_login_submit">Sign In</button>
+                            </div>
+
+                            <!--end::Action-->
+                        </form>
+                    </mat-card-content>
+                        <!--end::Form-->
+
+                        <!--begin::Separator-->
+                        <div class="kt-separator kt-separator--space-lg  kt-separator--border-solid"></div>
+<!-- <mat-divider></mat-divider> -->
+                        <!--end::Separator-->
+
+                        <!--begin::Options-->
+                        <h3 class="kt-login-v2__desc">Or sign with social account</h3>
+                        <div class="kt-login-v2__options">
+                            <a href="#" class="btn btn-facebook btn-pill">
+                                <i class="fab fa-facebook-f"></i>
+                                Facebook
+                            </a>
+                            <a href="#" class="btn btn-twitter btn-pill">
+                                <i class="fab fa-twitter"></i>
+                                Twitter
+                            </a>
+                            <a href="#" class="btn btn-google btn-pill">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </a>
+                        </div>
+
+                        <!--end::Options-->
+                    </div>
+                </div>
+
+                <!--end::Wrapper-->
+
+                <!--begin::Image-->
+                <div class="kt-login-v2__image">
+                    <img src="assets/media/misc/bg_icon.svg" alt="">
+                </div>
+
+                <!--begin::Image-->
+            </div>
+
+            <!--begin::Body-->
+        </div>
+        
+
+    </div>
+   
+</div>
+</mat-card>
+

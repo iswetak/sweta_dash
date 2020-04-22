@@ -1,0 +1,23 @@
+.action-bar {
+  text-align: right;
+  margin-top: -50px;
+}
+
+.action-bar:empty {
+  display: none;
+}
+    
+.mat-table {
+  width: 100%;
+}
+  
+.mat-table thead tr th.mat-header-cell {
+  color: #616161;
+  font-size: 12px;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+    
+.mat-table tbody tr td.mat-cell {
+  font-size: 12px;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}

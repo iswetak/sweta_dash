@@ -1,0 +1,40 @@
+
+<mat-sidenav-container class="example-container" style="margin-left: 40px;">
+    <mat-sidenav  mode="side" opened style="width: 270px; margin-left: 30px; margin-top: 20px; background-color: white; font-family: poppins; border-radius: 5px;">
+
+        <h3 style="margin-top: 30px; font-weight: 600; margin-left: 30px; font-family: poppins; font-size: 18px;">ANALYZE</h3>
+
+        <mat-divider style="width: 230px; margin-left: 20px; margin-top: 20px; background-color: white;"></mat-divider>
+        <br>
+
+      <mat-nav-list>
+        <ul class="kt-nav kt-nav--bolder kt-nav--fit-ver kt-nav--v4" role="tablist">
+            <li class="kt-nav__item  ">
+                <h3 class="kt-nav__link active" role="tab">
+                    <span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+                    <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/error')">METRICS</span>
+                </h3>
+            </li>
+            <li class="kt-nav__item  ">
+                <h3 class="kt-nav__link active" role="tab">
+                    <span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+                    <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/analyze')">USERS</span>
+                </h3>
+            </li>
+            <li class="kt-nav__item  ">
+                <h3 class="kt-nav__link active" role="tab">
+                    <span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+                    <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/error')">FLOW ANALYTICS</span>
+                </h3>
+            </li>
+            
+        </ul>
+    </mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content>
+  <div style="margin-left:20px;height: 100vh;">
+
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>

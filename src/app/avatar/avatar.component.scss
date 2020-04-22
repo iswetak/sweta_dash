@@ -1,0 +1,127 @@
+div.card {
+    width: 1550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+  div.header {
+    width: 1000px
+    // color: white;
+    // padding: -10px;
+    // font-size: 40px
+  }
+  
+  div.container {
+    padding: 10px;
+  }
+
+
+
+.div2 {
+    margin-left: 700px;
+    height: auto;  
+    padding: 300px;
+    border: 1px solid white;
+    background-color: white;
+  }
+
+  .Setup__Avatar {
+    font-family: Gotham Rounded SSm A,Gotham Rounded SSm B,Gotham Rounded,Helvetica,sans-serif;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    // width: 100%;
+    background: #f1f1fb;
+    position: relative;
+}
+.avatarPicker__container {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #dbdcff;
+    background: #fff;
+    height: 86px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.avatarIcon_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0 5px;
+}
+.avatarIcon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 2px;
+    margin: 0 5px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1fb;
+}
+// .avatarIcon_container .selected {
+//     box-shadow: 0 0 4px 0 #777eff;
+//     border: 1px solid #777eff;
+// }
+.avatarIcon:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border:1px solid  #777eff;  
+    outline-style: solid 1px;
+  }
+//   .bp3-callout {
+//     line-height: 1.5;
+//     font-size: 14px;
+//     position: relative;
+//     border-radius: 3px;
+//     background-color: rgba(138,155,168,.15);
+//     width: 100%;
+//     padding: 10px 12px 9px;
+//   }
+
+.bp3-tab-list {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: flex-end;
+  position: relative;
+  margin: 0;
+  border: none;
+  padding: 0;
+  list-style: none;
+}
+.Dialog__tabs {
+  position: relative;
+}
+
+.dd{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+  }
+
+  .divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.bp3-input {
+  box-shadow: none;
+  border: 1px solid rgba(16,22,26,.2);
+}
+
+.fa-arrow-circle-left:hover {
+  color: #4169E1;
+}

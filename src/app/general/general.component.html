@@ -1,0 +1,54 @@
+<div style="margin-left: 28px; margin-top: 65px;">
+<mat-sidenav-container class="example-container" style="background-color: transparent;" >
+<mat-sidenav  mode="side" opened style="width: 270px;height: 600px; font-family: poppins; border-radius: 5px;">
+
+<h3 style="margin-top: 15px;  margin-left: 30px; font-family: poppins; font-size: 18px;">Setting</h3>
+
+<mat-divider style="width: 350px; margin-left: -2px; margin-top: 17px; background-color: white;"></mat-divider>
+
+
+<mat-nav-list>
+<ul  class="kt-nav kt-nav--bolder kt-nav--fit-ver kt-nav--v4" role="tablist">
+    <li class="kt-nav__item  ">
+        <h3 class="kt-nav__link active" role="tab">
+            <span class="kt-nav__link-icon"><i class="
+                flaticon2-settings"></i></span>
+            <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/Setting')">General</span>
+        </h3>
+    </li>
+    <li class="kt-nav__item  ">
+        <h3 class="kt-nav__link active" role="tab">
+            <span class="kt-nav__link-icon"><i class="
+                flaticon-comment"></i></span>
+            <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/Errors')">Custom Response</span>
+        </h3>
+    </li>
+    <li class="kt-nav__item  ">
+        <h3 class="kt-nav__link active" role="tab">
+            <span class="kt-nav__link-icon"><i class="flaticon2-graphic"></i></span>
+            <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/Errors')">SEO & Tracking</span>
+        </h3>
+    </li>
+    <li class="kt-nav__item  ">
+        <h3 class="kt-nav__link active" role="tab">
+            <span class="kt-nav__link-icon"><i class="flaticon2-user"></i></span>
+            <span style="font-family: poppins;" class="kt-nav__link-text" (click)="openLink('/Errors')">Typing Emulation</span>
+        </h3>
+    </li>
+    
+</ul>
+
+
+
+
+
+
+</mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content>
+    <div style="margin-left:20px;height: 100vh;">
+<router-outlet></router-outlet>
+</div>
+</mat-sidenav-content>
+</mat-sidenav-container>
+</div>

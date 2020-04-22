@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="header">
+        <div style="margin-top: 30px; margin-right: 800px; font-size: 15px; font-family: poppins;">Step 1 of 7</div>
+    </div>
+    <div class="container">
+        <p style="margin-top: -30px; font-weight: bold; font-size: 25px; font-family: poppins;">RumiLabs</p>
+        <!-- <img width="160" src="https://static.helloumi.com/daisho/img/logo-setup.png" alt="https://static.helloumi.com/daisho/img/logo-setup.png" class="img img-loaded"> -->
+    </div>
+  </div>
+  <div class="div2">
+    <div style="margin-top: -260px; margin-left: -200px;">
+    <img width="500"  src="https://static.helloumi.com/daisho/img/onboarding_preview_0.png">
+</div>
+<div style="margin-left: -190px; margin-top: -580px;">
+    <img width="550" src="https://static.helloumi.com/daisho/img/onboarding_preview_1.png">
+</div>
+</div>
+<mat-card>
+<div style="margin-top: -700px; margin-left: 150px; ">
+    <h3 style="font-size: 25px; font-family: poppins;">About your company</h3>
+    <h5 style="font-size: 15px; font-family: poppins;">We need this to customize your experience</h5><br><br>
+    <mat-card-content>
+        <form  [formGroup]="loginForm" (ngSubmit)="submitForm()"  class="form-group">
+        <div style="width: 200px;">
+        <mat-form-field >
+        <input type="text" class="form-control" placeholder="Enter company name" value="" style="padding-right: 30px; width: 400px;">
+        <!-- <input matInput formControlName="companyname" required minlength="3" type="email"  class="form-control" aria-describedby="emailHelp" placeholder="Enter company name"> -->
+    </mat-form-field>
+    </div>
+    <span class="bp3-input-action"></span>
+    <div class="bp3-input-group bp3-large inputGroup">
+        <div style="width: 400px; font-family: poppins;">
+        <mat-form-field style="margin-top: -20px;">
+        <input type="text" class="form-control" placeholder="Your website URL" value="" style="padding-right: 30px; width: 400px;">
+        </mat-form-field >
+       </div>
+        <!-- <span class="bp3-input-action">
+            <div style="margin-top: -70px; margin-left: 270px;">
+            <button class="noDomainButton">I DON'T HAVE ONE</button>
+        </div>
+        </span> -->
+   </div>
+   <div class="form-group" style="font-family: poppins;">
+       <div>
+        <mat-form-field style="width: 400px; margin-top: -20px;">
+    <select required class="form-control" id="exampleSelect1">
+        <option value="" hidden="">Your company size</option>
+        <option value="Just me">Just me</option>
+        <option value="1-5">1-5</option>
+        <option value="6-20">6-20</option>
+        <option value="21-50">21-50</option>
+        <option value="51-200">51-200</option>
+        <option value="201-1000">201-1000</option>
+        <option value="+1000">+1000</option>
+    </select>
+</mat-form-field>
+</div><br>
+<div>
+<a href="/Custmization">
+<button type="button" class="btn btn-primary btn-lg">&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;Continue &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+<i class="fa fa-arrow-right"></i></button>
+</a>
+</div>
+</div>
+</form>
+    </mat-card-content>
+</div>
+</mat-card>

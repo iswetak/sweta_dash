@@ -1,0 +1,29 @@
+.slider-button1,.slider-button2,.slider-button3{
+    width: 230px;
+    margin-left: 20px;
+    font-family: poppins;
+}
+
+.slider-button2{
+  top: -20px;
+}
+
+.slider-button3{
+    top: -40px;
+  }
+
+
+  .slider-button1:focus {
+    color: #4D65DB;
+    outline: 0;
+}
+
+.slider-button2:focus {
+    color: #4D65DB;
+    outline: 0;
+}
+
+.slider-button3:focus {
+    color: #4D65DB;
+    outline: 0;
+}

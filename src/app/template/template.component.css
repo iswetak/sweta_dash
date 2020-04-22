@@ -1,0 +1,107 @@
+.example-container {
+    width: 960px;
+    height: 637px;
+    margin: -0px;
+    margin-left: 25px;
+    margin-top: 20px;
+    /* border: 1px solid #555; */
+    border-radius: 5px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(92, 91, 91, 0.938),  
+       0 1px 1px 0 rgba(158, 157, 157, 0.856);
+}
+
+.mat-toolbar{
+    width: 960px;
+    height: 60px;
+    color: #adc2eb; 
+    /* margin-left: 50px;  */
+    font-size: 17px;
+    font-family: poppins;
+    background-color: #020238c9 !important;
+}
+
+.mat-flat-button.btn{
+    width: 180px; 
+    top: -40px; 
+    height: 42px; 
+    margin-left: 760px; 
+    background-color: #4D65DB; 
+    color: white;
+    font-size: 14px;
+    font-family: poppins;
+}
+
+.mat-flat-button:hover {
+background-color: #3333ff;
+}
+
+.vl1 {
+    border-left: 2px solid #a6a6a6;
+    margin-left: 89px;
+    margin-top: -35px;
+    height: 33px; 
+  }
+
+  .vl2 {
+    border-left: 2px solid #a6a6a6;
+    margin-left: 165px;
+    margin-top: -70px;
+    height: 33px;  
+  }
+
+  .vl3 {
+    border-left: 2px solid #a6a6a6;
+    margin-left: 302px;
+    margin-top: -70px;
+    height: 33px; 
+  }
+
+  .form-control{
+      width: 180px;
+      margin-left: 210px;
+      margin-top: -40px;
+      font-size: 14px;
+      height: 40px;
+      background-color: #e6e6ff; 
+      font-family: poppins;
+ 
+    }
+    .mat-flat-button.btn4{
+        width: 80px; 
+        top: -5px; 
+        height: 30px; 
+        border-radius: 25px;
+        margin-left: 115px;
+        background-color: #4D65DB; 
+        color: white;
+        font-size: 12px;
+        font-family: poppins;
+
+    }   
+
+    .mat-flat-button.btn4:hover{
+        background-color: #3333ff; 
+        
+    }
+
+.mat-card:hover {
+	box-shadow: rgba(16, 22, 26, 0.1) 0px 0px 0px 1px, rgba(16, 22, 26, 0.2) 0px 2px 4px, rgba(16, 22, 26, 0.2) 0px 8px 24px;
+}
+
+.d-inline-block{
+    font-family: poppins;
+
+}
+
+.example-viewport {
+    /* margin-left: -40px; */
+    position: fixed;
+    margin-top: 210px;
+    height: 350px;
+    width: 100%;
+    /* border: 1px solid b; */
+    /* box-shadow: 0 1px 1px 0 rgba(92, 91, 91, 0.938),  
+    0 1px 1px 0 rgba(158, 157, 157, 0.856); */
+  }

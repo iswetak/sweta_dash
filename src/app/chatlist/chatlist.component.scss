@@ -1,0 +1,15 @@
+@media screen and (min-width: 281px){
+    .div{
+        width: 360px; 
+        position: static;
+        // justify-content: space-between; 
+    }
+}
+
+@media screen and (max-width: 581px){
+    .div{
+        width: 360px; 
+        // justify-content: space-between; 
+ 
+    }
+}

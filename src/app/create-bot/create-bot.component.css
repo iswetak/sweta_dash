@@ -1,0 +1,11 @@
+.card:hover {
+	box-shadow: rgba(16, 22, 26, 0.1) 0px 0px 0px 1px, rgba(16, 22, 26, 0.2) 0px 2px 4px, rgba(16, 22, 26, 0.2) 0px 8px 24px;
+}
+
+.is-uppercase {
+    text-transform: capitalize;
+    color: black;
+}
+.h5,.p,.h3{
+    font-family: poppins !important;
+}

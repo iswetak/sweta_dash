@@ -1,0 +1,85 @@
+ <div class="example-container"><br>
+       <h3 class="heading" style="font-size: 18px; font-family: poppins; margin-top: -5px;">General</h3>  
+        <mat-divider style="margin-top: 15px;"></mat-divider><br>
+        <label style="margin-left: 100px; font-size: medium;">Bot Name</label><br><br>
+        <input style="margin-left: 100px; width: 400px;" type="email"  class="form-control" aria-describedby="emailHelp" placeholder="Basic Lead Generation"><br><br>
+        <mat-divider style="width: 510px; margin-left: 100px;"></mat-divider><br>
+        <label style="margin-left: 100px; font-size: medium;">Second visit</label><br><br>
+        <div>
+            <div style="margin-left: 100px; width: 400px; font-family: poppins;">
+            <select  required class="form-control" id="exampleSelect1">
+             <option value="" hidden="">Choose an option...</option>
+             <option value="Just me">Provide buttons to start again or continue</option>
+             <option value="1-5">Always continue the conversation</option>
+             <option value="6-20">Always start a new conversation</option>
+             
+         </select>
+     </div>
+     </div><br>
+     <img width="100%" src="https://static.landbot.io/daisho/img/sv_provide_buttons.gif" style=" margin-left: 100px; max-width: 550px;"><br><br><br>
+     <div class="bp3-callout">
+        <i class="flaticon2-open-text-book"></i>
+        <p>When refreshing the page, or at their second visit to the bot, each user will have <b>two buttons to decide whether to start a new conversation or continue the previous one</b>.</p><p><i>You can choose this setting to give your users the freedom to decide, but keep in mind: when you start again, the variables overwrite!<br>So this setting shouldn’t be used for lead generation or event registration!</i></p><div class="is-flex" style="margin-top: 16px;"><p style="flex: 1 1 0%;">For more info on when to use each setting and the different behavior of the variables, check out this article: 👉</p>
+            <button style="margin-top: -100px;background: #4D65DB; width: 90px; margin-left: 300px; border-radius: 8px;">Docs</button><br><br>
+  
+        </div></div><br><br>
+           <mat-divider style="width: 510px; margin-left: 100px;"></mat-divider><br>
+           <div style="margin-top: 20px;">
+           <label style="margin-left: 100px;" class="bp3-label">Disable bot</label>&nbsp;&nbsp;&nbsp;
+           <i class="fa fa-exclamation-circle" style="color: #4D65DB; font-size: 20px;" aria-hidden="true"></i>
+        </div>
+           <mat-button-toggle-group style="height: 38px; margin-top: -40px;  margin-left: 410px;">
+            <mat-button-toggle (click)="enable()" style="margin-top: -5px; width: 90px;" value="bold">Active<br><br></mat-button-toggle>
+            <mat-button-toggle (click)="disable()" style="margin-top: -5px; width: 90px;" value="italic">Disable<br><br></mat-button-toggle><br><br>
+            </mat-button-toggle-group>
+           
+        <br><br>
+           <mat-divider style="width: 510px; margin-left: 100px;"></mat-divider><br>
+           <label style="margin-left: 100px;" class="bp3-label">Delete bot</label>&nbsp;&nbsp;&nbsp;
+           <button style="margin-left: 320px;" type="button" class="btn btn-primary" (click)="openModal()" >&nbsp;&nbsp;&nbsp;Delete&nbsp;&nbsp;&nbsp;</button><br><br>
+           <mat-divider style="width: 510px; margin-left: 100px;"></mat-divider><br><br>
+           <button [disabled] = "isShow" style="margin-left: 100px; background: #4D65DB;" (click)="open()" type="button" class="btn btn-primary" >&nbsp;&nbsp;&nbsp;Apply Changes&nbsp;&nbsp;&nbsp;</button><br><br>
+       <br>
+
+<!-- <button mat-raised-button id="logout-button" (click)="openModal()">Logout</button> -->
+<!-- <button type="button"   data-toggle="modal" data-target="#kt_blockui_4_1_modal2" class="btn btn-sm btn-clean btn-bold btn-upper" style="color:#57597B;font-weight: 500; margin-top: -40px; margin-left: -10px;" ><span style="color:#B4B4C4;">welcome</span> &nbsp;&nbsp;&nbsp; Stocked!</button>
+<div  style="margin-left: -100px;" class="modal fade" id="kt_blockui_4_1_modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 40px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+             <div >
+                <h3 class="modal-title" id="exampleModalLabel" style="color:#45496d ;font-weight: 500; margin-left: 30px;margin-top:20px;">Edit Variables</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -40px; margin-right: 20px;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>&nbsp;&nbsp;&nbsp;
+            <div  style="margin-left:30px; margin-top: -20px;" >
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="form-control-label" style="font-size: 15px;font-weight: 400;">Name</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Welcome" style="width:400px;background: #F9FAFB;">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="form-control-label" style="font-size: 15px;font-weight: 400;">Type</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12" style="margin-left: -10px;">
+                            <select class="form-control kt_selectpicker"  disabled >
+                                <option data-subtext="French's" >String</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="form-control-label" style="font-size: 15px;font-weight: 400;">Value</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Stoked!" style="width:400px">
+                    </div>
+                </form>
+            </div>
+                <div class="modal-footer" >
+                    <button type="button" class="btn btn-outline-brand" data-dismiss="modal" ><i class="fa fa-arrow-left" ></i></button>
+                    <button type="button" class="btn btn-outline-brand" id="kt_blockui_4_1"style="background: #5578EB;color:white">Save</button>
+                </div>
+          </div>
+    </div>
+</div> -->
+</div><br>
+              
+
+      
