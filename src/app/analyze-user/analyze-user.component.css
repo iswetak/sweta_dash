@@ -1,8 +1,8 @@
 .example-container {
-    width: 960px;
-    height: 637px;
-    margin-left: 20px;
-    margin-top: 20px;
+    width: 780px;
+    height: 600px;
+    margin-left: 0px;
+    margin-top: 0px;
     /* border: 1px solid #555; */
     border-radius: 5px;
     position: fixed;
@@ -25,7 +25,7 @@
     width: 130px;
     top: -67px; 
     /* height: 45px;  */
-    margin-left: 810px;
+    margin-left: 630px;
     font-family: poppins; 
     background-color: #4D65DB; 
     color: white;
@@ -53,7 +53,7 @@
 
 .mat-flat-button.btn2{
     width: 125px;
-    top: -84px; 
+    top: -58px; 
     margin-left: 175px; 
     font-family: poppins;
     background-color: #4D65DB; 

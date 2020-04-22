@@ -63,9 +63,9 @@
 }
 
 .position{
-  top: 185px;
-  right: 50px;
+  top: -15px;
+  right: 15px;
   color: white;
   background-color: #4D65DB;
-  position: fixed;
+  /* position: static; */
 }

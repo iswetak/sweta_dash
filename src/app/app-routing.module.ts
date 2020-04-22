@@ -35,33 +35,11 @@ const routes: Routes = [
   { path:'Industry', component: CompanyIndustryComponent },
    { path:'sample', component: SampleComponent },
 
-//   { path:'sample', component: SampleComponent ,
-//   children:[
-    //       { path:'Chatlist', component: ChatlistComponent },
-
-    // { path: 'createbot' ,component: CreateBotComponent },
-    // {path:'General', component: GeneralComponent,children:[
-    //   { path:'Setting', component: SettingComponent },
-    //   ]},
-
-    //   { path: 'dashboard1' ,component: Dashboard1Component,
-    //   children:[
-    //     { path: 'analyze' ,component: AnalyzeUserComponent },
-    
-    //   ]
-//     },
-
-//   ]
-// },
-
-
     { path:'Dashboard', component: DashboardComponent ,
     children:[
-
       { path: 'dashboard1' ,component: Dashboard1Component,
       children:[
-        { path: 'analyze' ,component: AnalyzeUserComponent },
-    
+        { path: 'analyze' ,component: AnalyzeUserComponent },   
       ]
     },
 

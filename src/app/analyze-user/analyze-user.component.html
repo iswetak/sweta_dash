@@ -1,7 +1,7 @@
-<div class="example-container">
+<div class="example-container" style="position: fixed;">
 
-    <h6 style="margin-left: 20px; margin-top: 20px; font-size: 18px; font-family: poppins;">USERS</h6>
-    <div data-position="right" class="column is-narrow" style="margin-left: 740px;">
+    <h6 style="margin-left: 20px; margin-top: 20px; font-size: 18px; font-family: poppins;">Users</h6>
+    <div data-position="right" class="column is-narrow" style="margin-left: 560px; margin-top: -10px;">
         <button mat-flat-button type="button" class="refresh" style="top: -31px; max-width: 10px; background-color: #4D65DB">
             <span icon="refresh" class="bp3-icon bp3-icon-refresh">
                 <svg data-icon="refresh" width="18" height="18" viewBox="0 0 18 18">
@@ -16,7 +16,7 @@
         <button mat-flat-button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Request Data
         </button>
-        <div class="dropdown-menu p-4 text-muted" style="max-width: 350px; margin-top: 5px; margin-right: 15px; height: 140px;">
+        <div class="dropdown-menu p-4 text-muted" style="max-width: 350px; margin-top: 8px; margin-right: -10px; height: 140px;">
             <p style="font-family: poppins; font-size: 15px; margin-top: -10px;">
                 Click "OK" to confirm your users export.
                 You &nbsp;&nbsp; will &nbsp;&nbsp; receive &nbsp;&nbsp; an &nbsp;&nbsp; email &nbsp;&nbsp; in &nbsp;&nbsp; fatima@ruminationlabs.com &nbsp;&nbsp; with &nbsp;&nbsp; your report attached.
@@ -26,9 +26,9 @@
         </div>
     </div>
 
-    <mat-divider style="width: 920px; margin-left: 20px; margin-top: -60px;"></mat-divider>
+    <mat-divider style="  margin-top: -55px;"></mat-divider>
 
-    <div class="form-group" style="font-family: poppins;">
+    <div  style="font-family: poppins;">
         <div style="width: 150px; margin-left: 20px; margin-top: 10px;">
             <select (change)="onChange($event)" class="form-control" id="exampleSelect1">
                 <option class="dropdown-item" value="all">ALL</option>
@@ -60,7 +60,7 @@
         Add filter
     </button>   
     <br>
-    <div class="center-form" style="margin-top: -100px;">
+    <div class="center-form" style="margin-top: -80px;">
         
         <app-va-mat-table>
             <ng-container action-bar-items>

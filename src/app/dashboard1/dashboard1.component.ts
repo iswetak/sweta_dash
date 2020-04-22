@@ -25,7 +25,7 @@ export class Dashboard1Component implements OnInit {
 
   openLink(link:string){
     console.log("navigate:"+link)
-    this.router.navigate(['/Dashbord/dashboard1/'+link]);
+    this.router.navigate(['/Dashboard/dashboard1/'+link]);
   }
 
 }
